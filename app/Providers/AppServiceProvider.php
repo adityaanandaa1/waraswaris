@@ -1,0 +1,28 @@
+<?php
+
+namespace App\Providers;
+use Illuminate\Support\Facades\View;
+use Carbon\Carbon;
+use App\Http\View\Composers\SidebarComposer;
+use Illuminate\Support\Facades\URL;
+
+use Illuminate\Support\ServiceProvider;
+
+class AppServiceProvider extends ServiceProvider
+{
+    /**
+     * Register any application services.
+     */
+    public function register(): void
+    {
+        //
+    }
+
+    /**
+     * Bootstrap any application services.
+     */
+    public function boot(): void
+    {
+         View::composer('partials.sidebar_dokter', SidebarComposer::class);
+    }
+}

@@ -1,0 +1,214 @@
+.hidden {
+    display: none !important;
+}
+
+.datepicker-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: inline-block;
+}
+
+.datepicker {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+
+    position: absolute; 
+    top: 100%;
+    left: 0;
+    margin-top: 4px;
+    z-index: 999;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.datepicker-box {
+    border-radius: 10px;
+    background-color: #CEDEFF;
+    padding: 10px 10px;
+}
+
+.datepicker-input {
+    border: none;
+    background-color: #CEDEFF;
+    color: #5A81FA;
+}
+
+.datepicker-input:hover {
+    cursor: pointer;
+}
+
+.datepicker-input:focus {
+    cursor: pointer;
+    outline: none;
+}
+
+.datepicker-icon:hover {
+    cursor: pointer;
+}
+
+.datepicker-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.datepicker-monthYear {
+    cursor: pointer;
+    color: #1F4DD9;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.datepicker-prevBtn {
+    color: #1F4DD9;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.datepicker-nextBtn {
+    color: #1F4DD9;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.datepicker-header button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 25%;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+.datepicker-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.datepicker-day {
+    text-align: center;
+    padding: 5px;
+    color: #5A81FA;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.datepicker-dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.datepicker-date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2px;
+    margin: auto;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    color: #5A81FA;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+}
+
+.datepicker-date:hover, .datepicker-date.active {
+    background-color: #5A81FA;
+    color: #FFFFFF;
+}
+
+.datepicker-date.inactive {
+    color: #5A81FA50;
+}
+
+.datepicker-date.inactive:hover {
+    background-color: #FFFFFF;
+}
+
+.datepicker-month {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 10px;
+    text-align: center;
+    color: #1F4DD9;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.datepicker-month div {
+    padding: 10px 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.5s;
+}
+
+.datepicker-month div:hover {
+    background-color: #6E90FA;
+    border-radius: 10px;
+    color: #FFFFFF;
+}
+
+.datepicker-month-active {
+    background-color: #6E90FA;
+    border-radius: 10px;
+    color: #FFFFFF;
+}
+
+.datepicker-year {
+    height: 250px;
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Atur 4 kolom untuk bulan */
+    gap: 8px;
+    padding: 10px;
+    text-align: center;
+    color: #1F4DD9;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.datepicker-year div {
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.5s;
+}
+
+.datepicker-year div:hover {
+    background-color: #6E90FA;
+    border-radius: 10px;
+    color: #FFFFFF;
+}
+
+.datepicker-year-active {
+    background-color: #6E90FA;
+    border-radius: 10px;
+    color: #FFFFFF;
+}
+
+.datepicker-no-pointer {
+    pointer-events: none;
+    cursor: default !important;
+}
+
+.datepicker-hidden-icon {
+    visibility: hidden;
+}

@@ -1,0 +1,263 @@
+.recordform-page {
+    margin: 30px;
+}
+
+.recordform-header {
+    margin-bottom: 20px;
+}
+
+.recordform-header-inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.recordform-back-icon {
+    font-size: 30px;
+    color: #5A81FA;
+    margin-right: auto; 
+    text-decoration: none;
+    padding: 5px 8px;
+    border-radius: 100%;
+    transition: background-color 0.5s ease;
+}
+
+.recordform-back-icon:hover {
+    background-color: #FFFFFF;
+    border-radius: 100%;
+    padding: 5px 8px;
+}
+
+.recordform-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 25px;
+    color: #5A81FA;
+    font-weight: bold;
+    margin: 0;
+}
+
+.recordform-wrapper {
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.recordform-document {
+    padding: 30px 70px;
+}
+
+.recordform-rm-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    margin-left: 0;
+    padding: 20px 30px;
+    padding-bottom: 0;
+}
+
+.recordform-rm-label {
+    margin: 0;
+    font-size: 16px;
+    color: #464646;
+}
+
+.recordform-patient-info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0px 70px;
+    padding-top: 20px;
+}
+
+.recordform-info-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.recordform-info-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.recordform-info-item {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    align-items: start;
+    margin-bottom: 10px;
+}
+
+.recordform-info-item strong {
+    font-size: 16px;
+    color: #464646;
+    font-weight: bold;
+    width: 150px;
+}
+
+.recordform-info-item span {
+    font-size: 16px;
+    color: #464646;
+    font-weight: normal;
+}
+
+.recordform-keluhan-wrapper {
+    display: grid;
+    grid-template-columns: 160px 10px 1fr;
+    margin-top: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0px 70px;
+}
+
+.recordform-keluhan-wrapper .colon {
+    font-size: 16px;
+    font-weight: normal;
+    color: #464646;
+}
+
+.recordform-keluhan-wrapper strong {
+    font-size: 16px;
+    font-weight: bold;
+    color: #464646;
+}
+
+.recordform-keluhan-wrapper span {
+    font-size: 16px;
+    color: #464646;
+    font-weight: normal;
+}
+
+#rf-keluhan {
+    display: block;
+    border-radius: 6px;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.recordform-doctor-info {
+    padding: 0px 70px;
+}
+
+.recordform-section-divider {
+    border: 0;
+    border-top: 2px solid #aaa;
+    width: auto; 
+    margin: 20px 70px;
+    padding: 0px 70px;
+}
+
+.recordform-physical-section {
+    height:auto;
+    padding-bottom: 30px;
+}
+
+.recordform-section-title {
+    font-size: 24px;
+    color: #5A81FA;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.recordform-physical-input {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    font-size: 16px;
+    color: #464646;
+    font-weight: normal;
+    width: 100%;
+}
+
+.recordform-physical-input label{
+    font-size: 14px;
+    font-weight: 500;
+    color: #464646;
+    margin-bottom: 10px;
+}
+
+.recordform-physical-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.recordform-physical-grid input {
+    width: 28%;
+}
+
+.input-unit {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.input-unit span {
+    white-space: nowrap;
+}
+
+.recordform-diagnosis-section {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    margin: 25px 70px;
+}
+
+.recordform-plan-section {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    margin: 25px 70px;
+}
+
+.recordform-textarea {
+    border-radius: 5px;
+    border: 1px solid #000;
+    padding: 5px;
+    height: 100px;
+}
+
+.recordform-input {
+    border-radius: 5px;
+    border: 1px solid #000;
+    padding: 5px;
+}
+
+.recordform-notes-section {
+    margin: 0px 70px;
+}
+
+.recordform-btn-save {
+    display: flex;
+    margin-right: 70px;
+    border-radius: 20px;
+    background-color: #1647E0;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    padding: 10px 15px;
+    margin-left: auto;
+    transition: background-color 0.5s ease;
+    margin-top: 30px;
+}
+
+.recordform-btn-save:hover {
+    background-color: #B6C7FC;
+}
+
+.alert-error {
+    color:red;
+    font-size: 12px;
+}

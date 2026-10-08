@@ -1,0 +1,431 @@
+.patientlist-header {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    animation: fadeInUp 0.6s ease-out 0.5s backwards;
+}
+
+.patientlist-title-section {
+    display: flex;
+}
+
+.patientlist-title-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.patientlist-title {
+    color: #5A81FA;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 3px 0px;
+    animation: scaleIn 0.6s ease-out 0.4s backwards;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.patientlist-subtitle {
+    font-size: 13px;
+    color: #5A81FA;
+    font-weight: lighter;
+    animation: scaleIn 0.6s ease-out 0.4s backwards;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.patientlist-search {
+    background: #FFFFFF;
+    border-radius: 15px;
+    padding: 10px 10px 10px 20px;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.15);
+    height: 45px;
+    animation: slideInLeft 0.8s ease-out;
+}
+
+.patientlist-search-input {
+    font-size: 14px;
+    color: #979797;
+    font-weight: lighter;
+    border: none;
+}
+
+.patientlist-search-input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.patientlist-search:focus-within {
+    outline: none;
+    border: 2px solid #5A81FA;
+    box-shadow: 0 0 5px rgba(90, 129, 250, 0.4);
+}
+
+.patientlist-total {
+    font-size: 14px;
+    color: #5A81FA;
+    font-weight: 500;
+    text-align: right;
+    padding-right: 25px;
+    padding-top: 25px;
+    padding-bottom: 5px;
+}
+
+.patientlist-table-header {
+    display: grid;
+    grid-template-columns: 1fr 4fr 3fr 3fr 2fr 2fr;
+    background-color: #5A81FA;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding: 15px 12px;
+    border-radius: 15px;
+    font-size: 14px;
+    animation: fadeInUp 0.6s ease-out 0.2s backwards;
+    
+}
+
+.patientlist-table-body {
+    margin-top: 10px;
+}
+
+.patientlist-table-row {
+    display: grid;
+    grid-template-columns: 1fr 4fr 3fr 3fr 2fr 2fr;
+    align-items: center;
+    background: #FFFFFF;
+    border-radius: 20px;
+    padding: 10px 12px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.15);
+    animation: fadeInUp 0.6s ease-out 0.2s backwards;
+}
+
+.patientlist-col-name-value {
+    font-size: 14px;
+    color: #5A81FA;
+    font-weight: 400;
+}
+
+.patientlist-avatar {
+    max-width: 150px;
+    max-height: 200px;
+    background: #5A81FA;
+    border-radius: 10px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-left: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.patientlist-avatar-initial {
+    width: 150px;
+    height: 150px;
+    background: #5A81FA;
+    border-radius: 10px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 75px;
+    margin-left: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.patientlist-col-guardian-value {
+    font-size: 14px;
+    color: #5A81FA;
+    font-weight: 400;
+}
+
+.patientlist-col-lastvisit-value {
+    font-size: 14px;
+    color: #5A81FA;
+    font-weight: 400;
+}
+
+.patientlist-whatsapp-link {
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.patientlist-whatsapp-link:hover {
+    transform: scale(1.1);
+}
+
+.patientlist-detail-link {
+    color: #0066cc;
+    text-decoration: underline;
+    margin-left: 8px;
+    font-size: 14px;
+}
+.patientlist-detail-link:hover {
+  font-weight: 600;
+}
+
+.patientlist-no-data {
+    color: #666;
+    font-size: 14px;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Modal Biodata */
+.patientlist-modal-overlay {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 9999;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 16px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.patientlist-modal-box {
+    background: #FFFFFF;
+    width: 60%;
+    border-radius: 20px;
+}
+
+.patientlist-modal-close-btn {
+    background-color: #CEDEFF;
+    border-radius: 100px;
+    padding: 5px 10px;
+    margin: 15px;
+    margin-left: auto;
+    margin-bottom: 0%;
+    display: block;
+    border: none;
+    transition: background-color 0.5s ease;
+}
+
+.patientlist-modal-close-btn:hover {
+    background-color: #5A81FA;
+}
+
+.patientlist-modal-title {
+    color: #5A81FA;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.patientlist-modal-biodata {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.patientlist-modal-avatar {
+    background: #5A81FA;
+    border-radius: 30px;
+    width: 215px;
+    height: 215px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.patientlist-modal-data-col {
+    width: 55%;
+}
+
+.patientlist-modal-identity {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background-color: #B5C6FB;
+    border-radius: 30px 30px 0px 0px;
+    padding: 10px 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.patientlist-modal-identity-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #5A81FA;
+    font-size: 14px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.patientlist-modal-identity-divider {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.patientlist-modal-identity-value {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.patientlist-modal-details {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    border: 1px solid #dbeafe;
+    border-radius: 0px 0px 30px 40px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.patientlist-modal-detail-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 12px;
+}
+
+.patientlist-modal-detail-item strong {
+    flex: 1;
+    font-weight: 600;
+    color: #464646;
+    text-align: left;
+}
+
+.patientlist-modal-detail-item span {
+    flex: 2;
+    font-weight: normal;
+    color: #464646;
+    text-align: left;
+}
+
+.patientlist-modal-notes {
+    background: #B5C6FB;
+    margin: 20px 50px 10px 20px;
+    padding: 5px 25px;
+    border-radius: 30px;
+}
+
+.patientlist-modal-notes strong {
+    font-size: 14px;
+    font-weight: bold;
+    color: #1F4DD9;
+}
+
+.patientlist-modal-notes span {
+    font-size: 12px;
+    font-weight: normal;
+    color: #464646;
+}
+
+.patientlist-modal-loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;    
+    color: #1F4DD9;
+}
+
+.patientlist-modal-error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #d91f1f;
+}
+
+.patientlist-modal-medicalrecord-btn {
+    background-color: #5A81FA;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding: 7px;
+    transition: background-color 0.5s ease;
+    border-radius: 15px;
+    width: 200px;
+    text-align: center;
+    margin-left: auto;
+    display: block;
+    margin-bottom: 15px;
+    text-decoration: none;
+}
+
+.patientlist-modal-medicalrecord-btn:hover {
+    background-color: #CEDEFF;
+}
+
+.patientlist-modal-button-area {
+    padding: 0px 50px;
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
