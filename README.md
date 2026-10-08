@@ -16,15 +16,15 @@ Platform web untuk memudahkan pasien membuat reservasi online, resepsionis menge
 
 ---
 
-## ✨ Fitur Utama
+## Fitur Utama
 
-### 👤 Pasien
+### Pasien
 - Registrasi, login, dan reset password via email
 - Pengisian dan pengeditan biodata serta foto profil
 - Membuat dan membatalkan reservasi pemeriksaan
 - Melihat riwayat reservasi dan riwayat pemeriksaan beserta detailnya
 
-### 🩺 Dokter
+### Dokter
 - Dashboard ringkasan praktik harian
 - Daftar antrian dan detail reservasi pasien
 - Pencatatan rekam medis untuk setiap pemeriksaan
@@ -38,7 +38,7 @@ Platform web untuk memudahkan pasien membuat reservasi online, resepsionis menge
 - Data pasien beserta detailnya
 - Laporan kunjungan
 
-## 🧰 Teknologi
+## Teknologi
 
 | Layer | Teknologi |
 | --- | --- |
@@ -48,13 +48,13 @@ Platform web untuk memudahkan pasien membuat reservasi online, resepsionis menge
 | Database | MySQL |
 | Autentikasi | Session-based auth dengan role (pasien, dokter, resepsionis) |
 
-## 🗂️ Struktur Data
+## Struktur Data
 
 Entitas utama pada database:
 
 `akun_user` · `data_pasien` · `data_dokter` · `data_resepsionis` · `jadwal_praktik` · `reservasi` · `antrian` · `rekam_medis`
 
-## 🚀 Instalasi
+## Instalasi
 
 ### Prasyarat
 - PHP 8.2 atau lebih baru
@@ -104,20 +104,20 @@ php artisan serve
 
 Aplikasi dapat diakses di `http://127.0.0.1:8000`.
 
-## 📸 Tampilan
+## Tampilan
 
 <!-- Ganti dengan screenshot aplikasi Anda, simpan di folder docs/ -->
 <!-- ![Homepage](docs/homepage.png) -->
 <!-- ![Dashboard Pasien](docs/dashboard-pasien.png) -->
 
-## 🔐 Keamanan
+## Keamanan
 
 Jangan pernah meng-commit file `.env` atau berkas kredensial apa pun. Gunakan `.env.example` sebagai template tanpa nilai rahasia.
 
-## 👨‍💻 Pengembang
+## Pengembang
 
-Dikembangkan oleh [adityaanandaa1](https://github.com/adityaanandaa1).
+Dikembangkan oleh [Aditya Ananda Kasi](https://github.com/adityaanandaa1), [Cindy Faiza Nabila](https://github.com/cindyfaizanabila), dan [Daffa Aleia Amrita Waskitha](https://github.com/aleWaskitha)
 
-## 📄 Lisensi
+## Lisensi
 
 Proyek ini dibuat untuk keperluan perkuliahan. Dibangun di atas [Laravel](https://laravel.com), yang berlisensi [MIT](https://opensource.org/licenses/MIT).
