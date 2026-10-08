@@ -32,7 +32,7 @@ Platform web untuk memudahkan pasien membuat reservasi online, resepsionis menge
 - Laporan pemeriksaan
 - Manajemen profil dan unduh berkas SIP
 
-### 🧾 Resepsionis
+### Resepsionis
 - Dashboard operasional klinik
 - Pengelolaan daftar antrian harian
 - Data pasien beserta detailnya
